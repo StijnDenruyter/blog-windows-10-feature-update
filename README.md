@@ -1,1 +1,1 @@
-# blog-windows-10-feature-update
+This repository contains files that are used in a blog post on https://blog.stijndenruyter.be (Deploying Windows 10 Feature Update in a controlled manner)
