@@ -120,7 +120,7 @@ Try {
 		If ([System.Environment]::OSVersion.Version.Build -lt 18363) {
 
 			Show-InstallationWelcome -CheckDiskSpace -RequiredDiskSpace 15360 -AllowDefer -DeferDays 7 -PersistPrompt
-			Show-InstallationPrompt -Message 'The Windows 10 Feature Update has started. Please make sure your system is connected to the power at all time. This installation is fully automated so do not touch your system during the update.' -ButtonRightText 'Accept' -Icon Warning -NoWait
+			Show-InstallationPrompt -Message 'The Windows 10 Feature Update has started. Please make sure your system is connected to the power at all times. This installation is fully automated, so do not touch your system during the update.' -ButtonRightText 'Accept' -Icon Warning -NoWait
 			Show-InstallationProgress -WindowLocation BottomRight
 			If (Test-Path -Path "\\share\W10FeatureUpgrades\$($envComputerName)") {
 				Remove-Item -Path "\\share\W10FeatureUpgrades\$($envComputerName)" -Recurse
